@@ -35,7 +35,10 @@ model.eval()  # Set the model to evaluation mode
 
 # Streamlit page title
 st.title('(MLP) پیش‌بینی با مدل شبکه عصبی ')
-
+"""
+.لطفا مقادیر متغییرهای مورد نظر برای پیشبینی بازدهی هیدروسایکلون را وارد نمایید
+ .توجه داشته باشید مقدادیر وارد شده در بازه تعریف شده قرار داشته باشد *
+"""
 # User inputs (received as text inputs)
 x1 = st.text_input('(10 - 30) دبی:', value="0.0")
 x2 = st.text_input('(4 - 10) قطر سرریز:', value="0.0")
