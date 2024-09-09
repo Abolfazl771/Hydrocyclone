@@ -37,10 +37,10 @@ model.eval()  # Set the model to evaluation mode
 st.title('(MLP) پیش‌بینی با مدل شبکه عصبی ')
 
 # User inputs (received as text inputs)
-x1 = st.text_input('دبی:', value="0.0")
-x2 = st.text_input('قطر سرریز:', value="0.0")
-x3 = st.text_input('قطر ته ریز:', value="0.0")
-x4 = st.text_input('زاویه مخروطی اصلی:', value="0.0")
+x1 = st.text_input('(10 - 30) دبی:', value="0.0")
+x2 = st.text_input('(4 - 10) قطر سرریز:', value="0.0")
+x3 = st.text_input('(7.5 - 15) قطر ته ریز:', value="0.0")
+x4 = st.text_input('(5° - 12.5°) زاویه مخروطی اصلی:', value="0.0")
 
 # Convert input to a float array and prepare it for the scaler
 input_values = [float(x1), float(x2), float(x3), float(x4)]
